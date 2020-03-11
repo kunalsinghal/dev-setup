@@ -1,5 +1,5 @@
 # self serving aliases
-alias zr="emacs $HOME/startup.sh && source $HOME/startup.sh"
+alias zr="emacs $HOME/startup.sh && source $HOME/startup.sh && echo WARNING: these changes have not been commited to https://github.com/kunalsinghal/dev-setup"
 alias zz="source $HOME/startup.sh"
 
 # git aliases
