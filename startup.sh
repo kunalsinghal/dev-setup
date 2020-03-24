@@ -6,6 +6,8 @@ alias zz="source $HOME/startup.sh"
 alias clean="git branch | grep -v "master" | xargs git branch -D" # remove all branches apart from master
 alias ok="git add --all && git commit --amend --no-edit"
 alias feature"git checkout -b"
+alias branch="git rev-parse --abbrev-ref HEAD | tr -d '\n'"
+alias bbranch="git rev-parse --abbrev-ref HEAD | tr -d '\n' | pbcopy"
 
 # cleanup files
 alias remove="rm *~ &#"
