@@ -7,7 +7,10 @@ alias clean="git branch | grep -v "master" | xargs git branch -D" # remove all b
 alias ok="git add --all && git commit --amend --no-edit"
 alias feature"git checkout -b"
 alias branch="git rev-parse --abbrev-ref HEAD | tr -d '\n'"
-alias bbranch="git rev-parse --abbrev-ref HEAD | tr -d '\n' | pbcopy"
+alias gcaa="(git rev-parse --abbrev-ref HEAD | tr -d '\n' | pbcopy); git commit -v -a"
+function where(){
+    git show --pretty="" --name-only $1 | cat
+}
 
 # cleanup files
 alias remove="rm *~ &#"
