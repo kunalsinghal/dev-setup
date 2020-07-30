@@ -14,3 +14,5 @@ function where(){
 
 # cleanup files
 alias remove="rm *~ &#"
+
+export PATH=$PATH:~/.local/bin
